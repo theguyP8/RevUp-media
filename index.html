@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevUp Media | Accélérez Votre Croissance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0D1B2A',   // Professionalism
+                            gold: '#FFD700',   // Success
+                            orange: '#FF4C29', // Action
+                            gray: '#F5F5F5',   // Background
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-gradient': "linear-gradient(to right bottom, #0D1B2A, #0f2236, #112942, #12304f, #13385c)",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Open Sans', sans-serif; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Montserrat', sans-serif; }
+
+        .logo-arrow { transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .group:hover .logo-arrow { transform: translate(4px, -4px); }
+
+        .clip-diagonal { clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+        .clip-diagonal-reverse { clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+    </style>
+</head>
+<body class="bg-brand-gray text-brand-navy overflow-x-hidden">
+
+    <nav class="fixed w-full bg-brand-navy/95 backdrop-blur-md z-50 border-b border-brand-gold/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <a href="#" class="group flex items-center gap-3">
+                    <div class="relative w-10 h-10 bg-brand-gold flex items-center justify-center rounded-sm transform -skew-x-12">
+                        <i class="fas fa-arrow-up text-brand-navy text-xl font-black logo-arrow"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-heading font-black text-2xl tracking-tighter text-white leading-none">
+                            REV<span class="text-brand-gold">UP</span>
+                        </span>
+                        <span class="font-heading font-bold text-[10px] tracking-[0.2em] text-brand-orange uppercase leading-none mt-1">
+                            MEDIA
+                        </span>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex space-x-10 items-center">
+                    <a href="#probleme" class="text-gray-300 hover:text-brand-gold font-semibold text-sm uppercase tracking-wide transition-colors">Le Problème</a>
+                    <a href="#services" class="text-gray-300 hover:text-brand-gold font-semibold text-sm uppercase tracking-wide transition-colors">Services</a>
+                    <a href="#contact" class="bg-brand-orange hover:bg-red-600 text-white px-8 py-3 rounded-sm font-heading font-bold text-sm uppercase tracking-wider transition-all shadow-lg shadow-brand-orange/30 transform hover:-translate-y-1">
+                        Audit Gratuit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-hero-gradient text-white pt-40 pb-32 clip-diagonal">
+        <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none overflow-hidden">
+            <div class="absolute top-20 right-20 w-96 h-96 bg-brand-gold rounded-full blur-[100px]"></div>
+            <div class="absolute bottom-20 left-20 w-64 h-64 bg-brand-orange rounded-full blur-[80px]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 relative z-10 text-center md:text-left">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 border border-brand-gold/30 rounded-full bg-brand-navy/50 backdrop-blur-sm">
+                        <div class="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></div>
+                        <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Spécialisé Location de Voitures</span>
+                    </div>
+
+                    <h1 class="font-heading font-black text-5xl md:text-7xl leading-tight">
+                        ACCÉLÉREZ VOTRE <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-yellow-200">CROISSANCE</span>
+                    </h1>
+
+                    <p class="text-xl text-gray-300 max-w-xl font-light leading-relaxed">
+                        Arrêtez de perdre des clients face aux géants. Nous construisons votre présence digitale et lançons vos campagnes publicitaires pour remplir votre planning.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-5">
+                        <a href="#contact" class="bg-brand-gold text-brand-navy px-10 py-5 rounded-sm font-heading font-black text-lg uppercase tracking-wide hover:bg-white transition-all shadow-[0_0_30px_rgba(255,215,0,0.3)] text-center">
+                            Dominez le Marché
+                        </a>
+                        <a href="#services" class="border-2 border-brand-gray/20 text-white px-10 py-5 rounded-sm font-heading font-bold text-lg uppercase tracking-wide hover:border-brand-gold hover:text-brand-gold transition-all text-center">
+                            Voir Nos Solutions
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative hidden md:block">
+                    <div class="relative z-10 bg-brand-navy p-6 rounded-xl border border-brand-gray/10 shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500">
+                        <div class="flex items-center justify-between border-b border-gray-700 pb-4 mb-4">
+                            <div class="flex gap-2">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            </div>
+                            <div class="text-gray-500 text-xs font-mono">ads.manager.revup</div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center text-sm text-gray-400 font-mono">
+                                <span>PORTÉE (Instagram/FB)</span>
+                                <span class="text-brand-gold">15,400 <i class="fas fa-eye"></i></span>
+                            </div>
+                            <div class="h-32 bg-gray-800/50 rounded flex items-end justify-between px-2 pb-0 overflow-hidden">
+                                <div class="w-8 bg-brand-navy border-t border-brand-orange h-[30%]"></div>
+                                <div class="w-8 bg-brand-navy border-t border-brand-orange h-[45%]"></div>
+                                <div class="w-8 bg-brand-navy border-t border-brand-orange h-[40%]"></div>
+                                <div class="w-8 bg-brand-navy border-t border-brand-orange h-[65%]"></div>
+                                <div class="w-8 bg-brand-gold h-[85%] shadow-[0_0_15px_rgba(255,215,0,0.5)]"></div>
+                            </div>
+                            <div class="flex justify-between items-center bg-gray-800 p-3 rounded">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-blue-500/20 text-blue-500 flex items-center justify-center"><i class="fab fa-facebook-f"></i></div>
+                                    <span class="text-white font-bold text-sm">Campagne "Été 2025" Active</span>
+                                </div>
+                                <span class="text-green-400 text-xs font-bold">ROI: 4.5x</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-10 -left-10 w-full h-full border-2 border-brand-orange rounded-xl -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="probleme" class="py-24 bg-brand-gray">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-heading font-black text-4xl md:text-5xl text-brand-navy mb-4 uppercase">Le Garage Est Plein ?</h2>
+                <div class="w-20 h-2 bg-brand-orange mx-auto"></div>
+                <p class="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
+                    La plupart des agences de location à Beni Mellal attendent que le téléphone sonne. <br><strong>C'est une stratégie de perdant.</strong>
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group bg-white p-10 shadow-lg hover:shadow-2xl transition-all border-l-4 border-transparent hover:border-brand-orange">
+                    <div class="w-14 h-14 bg-brand-navy text-white flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-orange transition-colors">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl mb-3">Invisible sur Google</h3>
+                    <p class="text-gray-600">Si vous n'êtes pas dans le "Pack Local 3", vous n'existez pas. Les touristes cliquent sur les premiers résultats.</p>
+                </div>
+                <div class="group bg-white p-10 shadow-lg hover:shadow-2xl transition-all border-l-4 border-transparent hover:border-brand-orange">
+                    <div class="w-14 h-14 bg-brand-navy text-white flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-orange transition-colors">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl mb-3">Publicité Inexistante</h3>
+                    <p class="text-gray-600">Compter uniquement sur le bouche-à-oreille est lent. Vos concurrents utilisent Facebook Ads pour voler vos clients.</p>
+                </div>
+                <div class="group bg-white p-10 shadow-lg hover:shadow-2xl transition-all border-l-4 border-transparent hover:border-brand-orange">
+                    <div class="w-14 h-14 bg-brand-navy text-white flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-orange transition-colors">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl mb-3">Site Web Amateur</h3>
+                    <p class="text-gray-600">Un site lent ou moche crie "Risque". Nous créons des machines à convertir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-brand-navy text-white clip-diagonal-reverse relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(#FFD700 1px, transparent 1px); background-size: 30px 30px;"></div>
+
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-heading font-black text-4xl md:text-5xl text-brand-gold mb-8 uppercase leading-none">
+                        La Méthode <br>RevUp
+                    </h2>
+                    <p class="text-xl text-gray-300 mb-12 border-l-4 border-brand-orange pl-6">
+                        Attirer. Convertir. Fidéliser. <br>Nous gérons tout votre écosystème digital.
+                    </p>
+
+                    <div class="space-y-10">
+                        <div class="flex gap-6 group">
+                            <div class="font-heading font-black text-5xl text-transparent bg-clip-text bg-gradient-to-b from-brand-gray to-brand-navy opacity-30 group-hover:opacity-100 group-hover:text-brand-gold transition-all">01</div>
+                            <div>
+                                <h3 class="font-heading font-bold text-2xl text-white mb-2">Web Design Premium</h3>
+                                <p class="text-gray-400">Des sites ultra-rapides conçus pour transformer un visiteur en locataire. Compatible mobile avec intégration WhatsApp.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 group">
+                            <div class="font-heading font-black text-5xl text-transparent bg-clip-text bg-gradient-to-b from-brand-gray to-brand-navy opacity-30 group-hover:opacity-100 group-hover:text-brand-gold transition-all">02</div>
+                            <div>
+                                <h3 class="font-heading font-bold text-2xl text-white mb-2">Social Media & Publicité</h3>
+                                <p class="text-gray-400">Nous créons des campagnes ciblées (Facebook & Instagram Ads) pour toucher les clients au bon moment.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 group">
+                            <div class="font-heading font-black text-5xl text-transparent bg-clip-text bg-gradient-to-b from-brand-gray to-brand-navy opacity-30 group-hover:opacity-100 group-hover:text-brand-gold transition-all">03</div>
+                            <div>
+                                <h3 class="font-heading font-bold text-2xl text-white mb-2">Domination Locale (SEO)</h3>
+                                <p class="text-gray-400">Optimisation complète de votre fiche Google Maps pour apparaître en premier dans les recherches locales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-800 to-black p-2 rounded-lg shadow-2xl rotate-1 hover:rotate-0 transition-all duration-500">
+                    <img src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Luxury Car Dark" class="rounded opacity-80 mix-blend-overlay w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute bottom-10 left-10 right-10">
+                        <div class="bg-brand-gold/90 p-6 backdrop-blur-md rounded-sm">
+                            <p class="font-heading font-black text-brand-navy text-xl uppercase">Résultats Prouvés</p>
+                            <p class="text-brand-navy font-bold text-sm mt-2">"Avec les pubs Facebook, nous avons doublé nos réservations en 30 jours."</p>
+                            <div class="flex text-brand-orange mt-3 text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-brand-navy rounded-3xl p-1 md:p-12 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-brand-gold rounded-full translate-x-1/3 -translate-y-1/3 opacity-20"></div>
+
+                <div class="relative z-10 bg-white rounded-2xl p-8 md:p-12">
+                    <div class="text-center mb-10">
+                        <h2 class="font-heading font-black text-4xl text-brand-navy mb-4 uppercase">Prêt à Décoller ?</h2>
+                        <p class="text-gray-600 font-semibold">
+                            Laissez vos concurrents se battre pour les miettes. Prenez la grosse part du gâteau.
+                        </p>
+                    </div>
+
+                    <form action="https://formspree.io/f/xbdjwopa" method="POST" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold text-brand-navy uppercase tracking-widest mb-2">Votre Nom</label>
+                                <input type="text" name="name" class="w-full bg-brand-gray border-b-2 border-gray-300 focus:border-brand-orange px-4 py-3 outline-none transition-colors font-bold text-brand-navy" placeholder="Karim..." required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-brand-navy uppercase tracking-widest mb-2">Nom de l'Agence</label>
+                                <input type="text" name="agency" class="w-full bg-brand-gray border-b-2 border-gray-300 focus:border-brand-orange px-4 py-3 outline-none transition-colors font-bold text-brand-navy" placeholder="Atlas Cars..." required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-brand-navy uppercase tracking-widest mb-2">Téléphone</label>
+                            <input type="tel" name="phone" class="w-full bg-brand-gray border-b-2 border-gray-300 focus:border-brand-orange px-4 py-3 outline-none transition-colors font-bold text-brand-navy" placeholder="+212 6..." required>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-navy hover:bg-brand-gold hover:text-brand-navy text-white font-heading font-black text-xl py-5 rounded-sm uppercase tracking-widest transition-all duration-300 shadow-xl group">
+                            Réserver Mon Audit <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform"></i>
+                        </button>
+                    </form>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-navy text-white py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-brand-gold flex items-center justify-center rounded-sm transform -skew-x-12">
+                    <i class="fas fa-arrow-up text-brand-navy text-sm font-black"></i>
+                </div>
+                <span class="font-heading font-bold text-xl tracking-tighter">REV<span class="text-brand-gold">UP</span> MEDIA</span>
+            </div>
+
+            <div class="text-gray-400 text-sm font-mono">
+                &copy; 2025 RevUp Media. Beni Mellal, Maroc.
+            </div>
+
+            <div class="flex space-x-6">
+                <a href="#" class="w-10 h-10 rounded-full bg-white/5 hover:bg-brand-gold hover:text-brand-navy flex items-center justify-center transition-all"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="w-10 h-10 rounded-full bg-white/5 hover:bg-brand-gold hover:text-brand-navy flex items-center justify-center transition-all"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
