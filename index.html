@@ -2,11 +2,70 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RevUp Media | High-Performance Custom Websites for Modern Businesses</title>
-    <meta name="title" content="RevUp Media | High-Performance Custom Websites for Modern Businesses">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+    <title>RevUp Media | High-Performance Custom Websites & Digital Infrastructure</title>
+    <meta name="title" content="RevUp Media | High-Performance Custom Websites & Digital Infrastructure">
     <meta name="description" content="RevUp builds fast, conversion-focused custom websites with integrated technical SEO, secure cloud hosting, and continuous monthly maintenance.">
-    
+    <meta name="keywords" content="web design agency, custom business websites, productized web design, website subscription, technical SEO, fast responsive websites, RevUp Media">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="RevUp Media">
+    <link rel="canonical" href="https://revupmedia.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://revupmedia.com/">
+    <meta property="og:title" content="RevUp Media | Professional Websites That Grow Your Business">
+    <meta property="og:description" content="Design • SEO • Performance • Maintenance. High-speed custom web architecture built to convert visitors into customers across every industry.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://revupmedia.com/">
+    <meta property="twitter:title" content="RevUp Media | Professional Websites That Grow Your Business">
+    <meta property="twitter:description" content="Design • SEO • Performance • Maintenance. Turn traffic into revenue.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "RevUp Media",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+      "description": "Professional custom website design, technical SEO, cloud hosting, and continuous monthly maintenance.",
+      "url": "https://revupmedia.com/",
+      "priceRange": "$199.99 - $499.99",
+      "areaServed": "Global",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "RevUp Website Packages",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Launch Plan",
+            "price": "199.99",
+            "priceCurrency": "USD",
+            "description": "5-page custom website, SEO setup, hosting, and ongoing maintenance."
+          },
+          {
+            "@type": "Offer",
+            "name": "Growth Plan",
+            "price": "349.99",
+            "priceCurrency": "USD",
+            "description": "10-page custom website, advanced SEO, lead funnel optimization, and ongoing maintenance."
+          },
+          {
+            "@type": "Offer",
+            "name": "Scale Plan",
+            "price": "499.99",
+            "priceCurrency": "USD",
+            "description": "15-page custom website, content blog engine, priority turnaround, and extended SEO."
+          }
+        ]
+      }
+    }
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='55' r='32' fill='none' stroke='%2338BDF8' stroke-width='8' stroke-dasharray='12 6'/><path d='M50 10 L78 50 L60 50 L60 85 L40 85 L40 50 L22 50 Z' fill='%232563EB'/></svg>">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,139 +97,373 @@
             }
         };
     </script>
+
     <style>
         body { font-family: 'Open Sans', sans-serif; }
         h1, h2, h3, h4, .font-heading { font-family: 'Montserrat', sans-serif; }
         .hero-bg { background: linear-gradient(135deg, #0A1118 0%, #0F2236 45%, #183D5D 100%); }
         .infographic-card { background: linear-gradient(180deg, #16283B 0%, #0E1A27 100%); }
-        .clip-diagonal { clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%); }
-        .clip-diagonal-reverse { clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%); }
+        .clip-diagonal { clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); }
+        .clip-diagonal-reverse { clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%); }
         @media (max-width: 768px) {
             .clip-diagonal, .clip-diagonal-reverse { clip-path: none; }
+        }
+        .glow-pulse {
+            box-shadow: 0 0 25px -5px rgba(2, 132, 199, 0.4);
         }
     </style>
 </head>
 
 <body class="bg-rev-light text-rev-dark overflow-x-hidden antialiased selection:bg-rev-blue selection:text-white">
 
-    <nav class="fixed top-0 left-0 w-full bg-rev-dark/95 backdrop-blur-md z-50 border-b border-rev-border/50">
+    <aside aria-label="Announcement" class="bg-gradient-to-r from-blue-700 via-rev-blue to-sky-600 text-white py-2 px-4 text-center text-xs font-heading font-bold uppercase tracking-wider">
+        <span>⚡ Q1 Client Capacity: <span class="bg-white/20 px-2 py-0.5 rounded text-white ml-1">Only 2 Onboarding Slots Left</span> · Lock In Pricing Today</span>
+    </aside>
+
+    <nav class="sticky top-0 left-0 w-full bg-rev-dark/95 backdrop-blur-md z-50 border-b border-rev-border/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
+
                 <a href="#" class="group flex items-center gap-3" aria-label="RevUp Media Homepage">
                     <div class="relative w-9 h-9 flex items-center justify-center">
-                        <svg viewBox="0 0 100 100" class="w-full h-full text-rev-cyan group-hover:rotate-45 transition-transform duration-500">
+                        <svg viewBox="0 0 100 100" class="w-full h-full text-rev-cyan group-hover:rotate-45 transition-transform duration-500" aria-hidden="true">
                             <circle cx="50" cy="55" r="30" fill="none" stroke="currentColor" stroke-width="8" stroke-dasharray="10 5" class="opacity-80"/>
                             <circle cx="50" cy="55" r="14" fill="#0A1118" stroke="currentColor" stroke-width="5"/>
                         </svg>
                         <div class="absolute inset-0 flex items-center justify-center -translate-y-1 group-hover:-translate-y-2 transition-transform duration-300">
-                            <i class="fas fa-arrow-up text-white text-lg"></i>
+                            <i class="fas fa-arrow-up text-white text-lg drop-shadow-[0_2px_8px_rgba(37,99,235,0.8)]"></i>
                         </div>
                     </div>
                     <div class="flex flex-col">
                         <span class="font-heading font-black text-2xl tracking-tight text-white leading-none">
                             REV<span class="text-rev-cyan">UP</span>
                         </span>
-                        <span class="font-heading font-bold text-[9px] tracking-[0.3em] text-rev-muted uppercase leading-none mt-1">MEDIA</span>
+                        <span class="font-heading font-bold text-[9px] tracking-[0.3em] text-rev-muted uppercase leading-none mt-1">
+                            MEDIA
+                        </span>
                     </div>
                 </a>
 
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#solutions" class="text-rev-muted hover:text-white font-semibold text-xs uppercase tracking-wider transition-colors">Solutions</a>
+                    <a href="#solutions" class="text-rev-muted hover:text-white font-semibold text-xs uppercase tracking-wider transition-colors">Before vs. After</a>
                     <a href="#seo" class="text-rev-muted hover:text-white font-semibold text-xs uppercase tracking-wider transition-colors">SEO & Speed</a>
-                    <a href="#process" class="text-rev-muted hover:text-white font-semibold text-xs uppercase tracking-wider transition-colors">How It Works</a>
-                    <a href="#pricing" class="text-rev-muted hover:text-white font-semibold text-xs uppercase tracking-wider transition-colors">Plans</a>
+                    <a href="#process" class="text-rev-muted hover:text-white font-semibold text-xs uppercase tracking-wider transition-colors">The Process</a>
+                    <a href="#pricing" class="text-rev-muted hover:text-white font-semibold text-xs uppercase tracking-wider transition-colors">Packages</a>
                     <a href="#faq" class="text-rev-muted hover:text-white font-semibold text-xs uppercase tracking-wider transition-colors">FAQ</a>
                     <a href="#intake-section" class="bg-rev-blue hover:bg-blue-600 text-white px-6 py-2.5 rounded-lg font-heading font-bold text-xs uppercase tracking-wider transition-all shadow-lg shadow-rev-blue/30 transform hover:-translate-y-0.5">
-                        Start Project
+                        Build My Website
                     </a>
                 </div>
 
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-rev-muted hover:text-white focus:outline-none text-2xl">
+                    <button id="mobile-menu-btn" aria-label="Open Navigation Menu" class="text-rev-muted hover:text-white focus:outline-none p-2 text-2xl">
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
+
             </div>
         </div>
+
         <div id="mobile-menu" class="hidden md:hidden bg-rev-slate border-b border-rev-border px-6 pt-3 pb-6 space-y-3">
-            <a href="#solutions" class="block text-rev-muted hover:text-white font-semibold py-2 text-sm">Solutions</a>
-            <a href="#pricing" class="block text-rev-muted hover:text-white font-semibold py-2 text-sm">Plans</a>
-            <a href="#intake-section" class="block bg-rev-blue text-white text-center py-3 rounded-lg font-heading font-bold text-sm uppercase">Start Project</a>
+            <a href="#solutions" class="block text-rev-muted hover:text-white font-semibold py-2 text-sm">Before vs. After</a>
+            <a href="#seo" class="block text-rev-muted hover:text-white font-semibold py-2 text-sm">SEO & Speed</a>
+            <a href="#process" class="block text-rev-muted hover:text-white font-semibold py-2 text-sm">The Process</a>
+            <a href="#pricing" class="block text-rev-muted hover:text-white font-semibold py-2 text-sm">Packages</a>
+            <a href="#faq" class="block text-rev-muted hover:text-white font-semibold py-2 text-sm">FAQ</a>
+            <a href="#intake-section" class="block bg-rev-blue text-white text-center py-3 rounded-lg font-heading font-bold text-sm uppercase">Build My Website</a>
         </div>
     </nav>
 
-    <header class="relative hero-bg text-white pt-36 pb-28 md:pb-36 clip-diagonal">
+    <header class="relative hero-bg text-white pt-20 pb-24 md:pt-28 md:pb-36 clip-diagonal">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
+            <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     <div class="inline-flex items-center gap-2 px-4 py-1.5 border border-rev-cyan/30 rounded-full bg-rev-slate/80 backdrop-blur-sm">
-                        <span class="w-2 h-2 rounded-full bg-rev-cyan animate-pulse"></span>
-                        <span class="text-rev-ice text-xs font-bold uppercase tracking-widest">High-Speed Digital Infrastructure</span>
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span class="text-rev-ice text-xs font-bold uppercase tracking-widest">
+                            Custom Web Engineering · Zero Clunky Templates
+                        </span>
                     </div>
 
-                    <h1 class="font-heading font-black text-4xl sm:text-6xl lg:text-7xl leading-tight">
-                        PROFESSIONAL WEBSITES THAT <br>
+                    <h1 class="font-heading font-black text-3xl sm:text-5xl lg:text-6xl xl:text-7xl leading-tight tracking-tight">
+                        STOP LOSING CLIENTS TO A <br class="hidden sm:inline">
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-rev-cyan to-blue-500">
-                            GROW YOUR BUSINESS.
+                            SLOW, OUTDATED SITE.
                         </span>
                     </h1>
 
-                    <p class="text-lg sm:text-xl text-rev-muted max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
-                        Design • SEO • Performance • Maintenance. High-speed custom web architecture built to convert visitors into booked jobs.
+                    <p class="text-base sm:text-lg lg:text-xl text-rev-muted max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
+                        We engineer lightning-fast websites with technical SEO that outrank local competitors and turn visitors into qualified leads.
                     </p>
 
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-2.5 sm:gap-4 text-xs font-mono text-rev-ice py-2">
+                        <span class="flex items-center gap-1.5 bg-rev-card/80 px-3 py-1.5 rounded border border-rev-border"><i class="fas fa-check text-rev-cyan"></i> Sub-Second Speed</span>
+                        <span class="flex items-center gap-1.5 bg-rev-card/80 px-3 py-1.5 rounded border border-rev-border"><i class="fas fa-check text-rev-cyan"></i> Mobile First (100%)</span>
+                        <span class="flex items-center gap-1.5 bg-rev-card/80 px-3 py-1.5 rounded border border-rev-border"><i class="fas fa-check text-rev-cyan"></i> Technical SEO Built-In</span>
+                        <span class="flex items-center gap-1.5 bg-rev-card/80 px-3 py-1.5 rounded border border-rev-border"><i class="fas fa-check text-rev-cyan"></i> Managed Hosting</span>
+                    </div>
+
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
-                        <a href="#pricing" class="bg-rev-blue hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-heading font-black text-base uppercase tracking-wider transition-all shadow-xl shadow-rev-blue/30 text-center">
-                            Explore Packages
+                        <a href="#pricing" class="bg-rev-blue hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-heading font-black text-sm sm:text-base uppercase tracking-wider transition-all shadow-xl shadow-rev-blue/30 text-center transform hover:-translate-y-0.5">
+                            Claim Your Website Plan
                         </a>
-                        <a href="#process" class="border border-rev-border hover:border-rev-cyan text-white px-8 py-4 rounded-lg font-heading font-bold text-base uppercase tracking-wider transition-all text-center bg-rev-slate/50">
-                            How It Works
+                        <a href="#solutions" class="border border-rev-border hover:border-rev-cyan text-white px-8 py-4 rounded-lg font-heading font-bold text-sm sm:text-base uppercase tracking-wider transition-all text-center bg-rev-slate/50">
+                            See Before vs. After
                         </a>
                     </div>
                 </div>
 
-                <div class="lg:col-span-5 relative">
-                    <div class="infographic-card p-6 rounded-2xl border border-rev-border shadow-2xl space-y-5">
+                <div class="lg:col-span-5 relative mt-4 lg:mt-0">
+                    <div class="infographic-card p-5 sm:p-6 rounded-2xl border border-rev-cyan/40 shadow-2xl glow-pulse space-y-5">
                         <div class="flex items-center justify-between border-b border-rev-border pb-3">
                             <div class="flex gap-2">
                                 <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
                                 <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
                                 <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
                             </div>
-                            <span class="text-rev-muted text-xs font-mono">revup-engine // live-production</span>
+                            <span class="text-rev-cyan text-xs font-mono font-bold tracking-wider">LIVE SPEED BENCHMARK</span>
                         </div>
+
                         <div class="grid grid-cols-2 gap-3 text-left">
                             <div class="bg-rev-slate p-3.5 rounded-lg border border-rev-border">
                                 <span class="text-[11px] font-mono text-rev-muted uppercase block">PageSpeed Score</span>
-                                <span class="text-2xl font-heading font-black text-emerald-400">99 / 100</span>
+                                <span class="text-3xl font-heading font-black text-emerald-400">99<span class="text-xs text-rev-muted">/100</span></span>
                             </div>
                             <div class="bg-rev-slate p-3.5 rounded-lg border border-rev-border">
-                                <span class="text-[11px] font-mono text-rev-muted uppercase block">SEO Architecture</span>
-                                <span class="text-2xl font-heading font-black text-rev-cyan">A+ Index Ready</span>
+                                <span class="text-[11px] font-mono text-rev-muted uppercase block">Search Indexing</span>
+                                <span class="text-3xl font-heading font-black text-rev-cyan">A+ Ready</span>
                             </div>
+                        </div>
+
+                        <div class="bg-rev-slate p-4 rounded-lg border border-rev-border space-y-2.5 text-xs text-rev-muted">
+                            <div class="flex justify-between items-center py-1 border-b border-rev-border/50">
+                                <span>Core Web Vitals</span>
+                                <span class="text-emerald-400 font-bold">Passed (0.4s LCP)</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1 border-b border-rev-border/50">
+                                <span>SSL & Cloud Infrastructure</span>
+                                <span class="text-rev-ice font-semibold">256-bit Encrypted</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1">
+                                <span>Edits & Security Patches</span>
+                                <span class="text-sky-300 font-bold">100% Fully Managed</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-rev-cyan/10 border border-rev-cyan/30 rounded-lg p-3 text-center">
+                            <p class="text-[11px] text-rev-ice font-medium">⚡ Clients report an average <span class="font-bold text-white">+42% lift in phone calls & leads</span> within 60 days of launch.</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </header>
 
-    <section id="pricing" class="py-24 bg-rev-light">
+    <section class="bg-white border-b border-gray-200 py-8">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="text-center text-xs font-heading font-bold uppercase tracking-widest text-rev-muted mb-5">
+                Engineered for High-Ticket Contractors & Service Providers
+            </p>
+            <div class="flex flex-wrap justify-center items-center gap-6 sm:gap-12 text-sm font-bold text-rev-dark">
+                <span class="flex items-center gap-2"><i class="fas fa-car text-rev-cyan"></i> Automotive & Rentals</span>
+                <span class="flex items-center gap-2"><i class="fas fa-faucet-drip text-rev-cyan"></i> Water Damage & Roofing</span>
+                <span class="flex items-center gap-2"><i class="fas fa-building text-rev-cyan"></i> Real Estate & Developers</span>
+                <span class="flex items-center gap-2"><i class="fas fa-screwdriver-wrench text-rev-cyan"></i> General Contractors</span>
+                <span class="flex items-center gap-2"><i class="fas fa-scissors text-rev-cyan"></i> Salons & MedSpas</span>
+                <span class="flex items-center gap-2"><i class="fas fa-briefcase text-rev-cyan"></i> Agencies & B2B</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="py-20 md:py-24 bg-rev-light">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <span class="text-rev-blue font-heading font-bold text-xs uppercase tracking-widest">Transparent Packages</span>
-                <h2 class="font-heading font-black text-4xl sm:text-5xl text-rev-dark uppercase">Select Your Plan</h2>
-                <p class="text-gray-600 text-base">Setup fee + monthly managed hosting & continuous maintenance.</p>
+                <span class="text-rev-blue font-heading font-bold text-xs uppercase tracking-widest">The Transformation</span>
+                <h2 class="font-heading font-black text-2xl sm:text-4xl text-rev-dark uppercase">
+                    Why Generic Websites Fail (And How RevUp Fixes It)
+                </h2>
+                <div class="w-16 h-1 bg-rev-blue mx-auto"></div>
+                <p class="text-rev-slate text-sm sm:text-base">
+                    Most agencies build pretty digital business cards that get zero traffic. We build custom lead generation assets that convert visitors into revenue.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border-2 border-red-200 shadow-sm relative space-y-4">
+                    <div class="inline-block bg-red-100 text-red-700 font-heading font-bold text-xs px-3 py-1 rounded">
+                        <i class="fas fa-times-circle mr-1"></i> THE DIY / OUTDATED TRAP
+                    </div>
+                    <h3 class="font-heading font-black text-xl text-rev-dark">How Most Businesses Lose Money</h3>
+                    <ul class="space-y-4 text-sm text-gray-600">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-times text-red-500 font-bold mt-1"></i>
+                            <span><strong>5+ second load times:</strong> Over 53% of mobile visitors bounce before your page even opens.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-times text-red-500 font-bold mt-1"></i>
+                            <span><strong>Zero Search Optimization:</strong> Buried on page 4 of Google where zero customers will ever see you.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-times text-red-500 font-bold mt-1"></i>
+                            <span><strong>Confusing User Layouts:</strong> No clear CTA buttons, broken forms, and frustrated mobile visitors.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-times text-red-500 font-bold mt-1"></i>
+                            <span><strong>Constant Maintenance Headaches:</strong> Broken plugins, surprise $100/hr developer bills, and outdated info.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-rev-slate text-white p-6 sm:p-8 rounded-2xl border-2 border-rev-cyan shadow-2xl relative space-y-4 glow-pulse">
+                    <div class="inline-block bg-rev-cyan/20 text-sky-300 font-heading font-bold text-xs px-3 py-1 rounded border border-rev-cyan/30">
+                        <i class="fas fa-check-circle mr-1"></i> THE REVUP SALES ENGINE
+                    </div>
+                    <h3 class="font-heading font-black text-xl text-white">How RevUp Dominates Your Market</h3>
+                    <ul class="space-y-4 text-sm text-rev-muted">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-rev-cyan font-bold mt-1"></i>
+                            <span><strong class="text-white">Sub-Second Speed:</strong> Custom code that loads instantly, retaining every lead that lands on your page.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-rev-cyan font-bold mt-1"></i>
+                            <span><strong class="text-white">Built-in Technical SEO:</strong> Schema markup, dynamic sitemaps, and keyword hierarchies configured for Google rankings.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-rev-cyan font-bold mt-1"></i>
+                            <span><strong class="text-white">High-Conversion Funnels:</strong> Clean booking flows and frictionless quote forms designed for fast conversions.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-rev-cyan font-bold mt-1"></i>
+                            <span><strong class="text-white">Zero Maintenance Stress:</strong> Ultra-fast cloud hosting, security, and unlimited text/photo updates handled every month.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="seo" class="py-20 md:py-24 bg-white border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-rev-cyan font-heading font-bold text-xs uppercase tracking-widest">Engineered To Outrank</span>
+                <h2 class="font-heading font-black text-2xl sm:text-4xl text-rev-dark uppercase">
+                    Real Technical SEO & Speed Standards
+                </h2>
+                <div class="w-16 h-1 bg-rev-blue mx-auto"></div>
+                <p class="text-gray-600 text-sm sm:text-base">
+                    No vanity metrics or fake promises. We implement tangible architectural standards that Google rewards with higher organic rankings.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-rev-light p-6 sm:p-8 rounded-xl border border-gray-200 hover:border-rev-cyan transition-all">
+                    <div class="w-12 h-12 bg-rev-slate text-rev-cyan flex items-center justify-center rounded-lg text-xl mb-6">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-rev-dark mb-3">Technical SEO Infrastructure</h3>
+                    <p class="text-gray-600 text-xs mb-4 leading-relaxed">Complete backend indexing setup to ensure search crawlers rank your service pages first.</p>
+                    <ul class="space-y-2 text-xs font-mono text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-arrow-right text-rev-cyan"></i> Schema.org Structured Data</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-arrow-right text-rev-cyan"></i> Dynamic XML Sitemaps</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-arrow-right text-rev-cyan"></i> Canonical & Meta URL Structuring</li>
+                    </ul>
+                </div>
+
+                <div class="bg-rev-light p-6 sm:p-8 rounded-xl border border-gray-200 hover:border-rev-cyan transition-all">
+                    <div class="w-12 h-12 bg-rev-slate text-rev-cyan flex items-center justify-center rounded-lg text-xl mb-6">
+                        <i class="fas fa-file-code"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-rev-dark mb-3">On-Page Keyword Hierarchy</h3>
+                    <p class="text-gray-600 text-xs mb-4 leading-relaxed">Strategic copywriting that matches the exact high-intent searches of local customers and buyers.</p>
+                    <ul class="space-y-2 text-xs font-mono text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-arrow-right text-rev-cyan"></i> Local Service Keyword Mapping</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-arrow-right text-rev-cyan"></i> Optimized Semantic H1-H4 Tags</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-arrow-right text-rev-cyan"></i> Internal Link Flow Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="bg-rev-light p-6 sm:p-8 rounded-xl border border-gray-200 hover:border-rev-cyan transition-all">
+                    <div class="w-12 h-12 bg-rev-slate text-rev-cyan flex items-center justify-center rounded-lg text-xl mb-6">
+                        <i class="fas fa-gauge-high"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-rev-dark mb-3">Core Web Vitals 95+</h3>
+                    <p class="text-gray-600 text-xs mb-4 leading-relaxed">Built with clean code and CDN edge hosting for immediate load times across all mobile phones.</p>
+                    <ul class="space-y-2 text-xs font-mono text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-arrow-right text-rev-cyan"></i> Sub-Second Response Times</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-arrow-right text-rev-cyan"></i> Next-Gen WebP Image Compression</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-arrow-right text-rev-cyan"></i> Zero Clunky WordPress Bloat</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-20 md:py-24 hero-bg text-white relative clip-diagonal-reverse">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-20 space-y-4">
+                <span class="text-rev-cyan font-mono uppercase text-xs tracking-widest font-bold">Seamless Onboarding</span>
+                <h2 class="font-heading font-black text-3xl sm:text-5xl uppercase">
+                    Build → Launch → Grow
+                </h2>
+                <p class="text-rev-muted text-sm sm:text-base">
+                    No months-long delays. We take your business from outdated or non-existent to fully live and acquiring leads in under 20 business days.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 sm:gap-10">
+                <div class="infographic-card p-6 sm:p-8 rounded-xl border border-rev-border relative">
+                    <span class="font-heading font-black text-5xl text-rev-cyan/20 absolute top-4 right-6">01</span>
+                    <h3 class="font-heading font-bold text-2xl text-white mb-2">BUILD</h3>
+                    <span class="text-xs text-rev-cyan font-mono uppercase block mb-4">Architecture & Design</span>
+                    <p class="text-rev-muted text-sm leading-relaxed">
+                        Custom UI tailored specifically around your industry and target customers. Seamless responsive layouts and verified conversion pathways built from scratch.
+                    </p>
+                </div>
+
+                <div class="infographic-card p-6 sm:p-8 rounded-xl border border-rev-border relative">
+                    <span class="font-heading font-black text-5xl text-rev-cyan/20 absolute top-4 right-6">02</span>
+                    <h3 class="font-heading font-bold text-2xl text-white mb-2">LAUNCH</h3>
+                    <span class="text-xs text-rev-cyan font-mono uppercase block mb-4">Cloud Deployment</span>
+                    <p class="text-rev-muted text-sm leading-relaxed">
+                        High-speed cloud server provisioning, SSL certificate installation, domain setup, Google Search Console indexing, and Core Web Vital audits.
+                    </p>
+                </div>
+
+                <div class="infographic-card p-6 sm:p-8 rounded-xl border border-rev-cyan/40 relative">
+                    <span class="font-heading font-black text-5xl text-rev-cyan/20 absolute top-4 right-6">03</span>
+                    <h3 class="font-heading font-bold text-2xl text-white mb-2">GROW</h3>
+                    <span class="text-xs text-rev-cyan font-mono uppercase block mb-4">Managed Maintenance</span>
+                    <p class="text-rev-muted text-sm leading-relaxed">
+                        We handle managed cloud hosting, ongoing text and photo updates, monthly performance tuning, security patches, and 99.9% uptime monitoring automatically.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-20 md:py-24 bg-rev-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-rev-blue font-heading font-bold text-xs uppercase tracking-widest">Straightforward Pricing</span>
+                <h2 class="font-heading font-black text-3xl sm:text-5xl text-rev-dark uppercase">
+                    Select Your Website Plan
+                </h2>
+                <p class="text-gray-600 text-sm sm:text-base">
+                    One simple setup fee + monthly managed hosting and maintenance. Cancel anytime with zero hidden contracts.
+                </p>
             </div>
 
             <div class="grid lg:grid-cols-3 gap-8 items-stretch">
-                <div class="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col justify-between hover:shadow-lg transition-all">
+
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:shadow-xl transition-all">
                     <div>
                         <div class="flex justify-between items-center mb-4">
                             <h3 class="font-heading font-black text-2xl text-rev-dark">LAUNCH</h3>
-                            <i class="fas fa-rocket text-rev-muted"></i>
+                            <i class="fas fa-rocket text-rev-muted text-xl"></i>
                         </div>
-                        <p class="text-xs text-gray-600 mb-6">For single-location businesses needing a verified modern online footprint.</p>
+                        <p class="text-xs text-gray-600 mb-6">For single-location businesses needing an authoritative modern online presence.</p>
                         <div class="mb-6">
                             <span class="text-4xl font-heading font-black text-rev-dark">$199.99</span>
                             <span class="text-gray-500 font-semibold text-sm"> setup</span>
@@ -178,25 +471,27 @@
                         </div>
                         <ul class="space-y-3 text-sm text-gray-700 border-t border-gray-200 pt-6">
                             <li class="flex items-center gap-2"><i class="fas fa-check text-rev-blue"></i> Up to 5 Custom Pages</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check text-rev-blue"></i> Technical SEO Setup</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check text-rev-blue"></i> Managed Cloud Hosting</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-rev-blue"></i> 100% Fluid Mobile Experience</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-rev-blue"></i> Foundational Technical SEO</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-rev-blue"></i> High-Speed Managed Cloud Hosting</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-rev-blue"></i> Routine Content & Photo Updates</li>
                         </ul>
                     </div>
-                    <button onclick="selectPlanAndScroll('Launch Plan ($199.99 setup + $39.99/mo)')" class="mt-8 block w-full bg-rev-dark hover:bg-rev-slate text-white text-center py-3.5 rounded-lg font-heading font-bold text-sm uppercase tracking-wider transition-colors cursor-pointer">
+                    <button onclick="selectPlanAndScroll('Launch Plan ($199.99 setup + $39.99/mo)')" class="mt-8 block w-full bg-rev-dark hover:bg-rev-slate text-white text-center py-3.5 rounded-lg font-heading font-bold text-sm uppercase tracking-wider transition-colors cursor-pointer shadow-md">
                         Select Launch Plan
                     </button>
                 </div>
 
-                <div class="bg-rev-slate text-white border-2 border-rev-cyan rounded-2xl p-8 flex flex-col justify-between shadow-2xl relative transform lg:-translate-y-2">
+                <div class="bg-rev-slate text-white border-2 border-rev-cyan rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl relative transform lg:-translate-y-2 glow-pulse">
                     <div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-rev-cyan text-white font-heading font-black text-[11px] uppercase tracking-widest py-1 px-4 rounded-full shadow-md">
                         MOST POPULAR ⭐
                     </div>
                     <div>
                         <div class="flex justify-between items-center mb-4">
                             <h3 class="font-heading font-black text-2xl text-white">GROWTH</h3>
-                            <i class="fas fa-chart-line text-rev-cyan"></i>
+                            <i class="fas fa-chart-line text-rev-cyan text-xl"></i>
                         </div>
-                        <p class="text-xs text-rev-muted mb-6">Engineered for businesses actively scaling their pipeline and local search market.</p>
+                        <p class="text-xs text-rev-muted mb-6">Engineered for businesses actively scaling their pipeline and dominating local Google search.</p>
                         <div class="mb-6">
                             <span class="text-4xl font-heading font-black text-white">$349.99</span>
                             <span class="text-rev-muted font-semibold text-sm"> setup</span>
@@ -205,7 +500,9 @@
                         <ul class="space-y-3 text-sm text-rev-ice border-t border-rev-border pt-6">
                             <li class="flex items-center gap-2"><i class="fas fa-check text-rev-cyan"></i> Up to 10 Custom Pages</li>
                             <li class="flex items-center gap-2"><i class="fas fa-check text-rev-cyan"></i> Advanced Technical & On-Page SEO</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check text-rev-cyan"></i> Lead Funnel Optimization</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-rev-cyan"></i> High-Converting Lead Capture Funnel</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-rev-cyan"></i> Core Web Vital 95+ Guarantee</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-rev-cyan"></i> Priority Ongoing Turnaround</li>
                         </ul>
                     </div>
                     <button onclick="selectPlanAndScroll('Growth Plan ($349.99 setup + $69.99/mo)')" class="mt-8 block w-full bg-rev-blue hover:bg-blue-600 text-white text-center py-3.5 rounded-lg font-heading font-black text-sm uppercase tracking-wider transition-colors shadow-lg shadow-rev-blue/40 cursor-pointer">
@@ -213,11 +510,11 @@
                     </button>
                 </div>
 
-                <div class="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col justify-between hover:shadow-lg transition-all">
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:shadow-xl transition-all">
                     <div>
                         <div class="flex justify-between items-center mb-4">
                             <h3 class="font-heading font-black text-2xl text-rev-dark">SCALE</h3>
-                            <i class="fas fa-server text-rev-muted"></i>
+                            <i class="fas fa-server text-rev-muted text-xl"></i>
                         </div>
                         <p class="text-xs text-gray-600 mb-6">For multi-service brands requiring complete content hubs and priority turnaround.</p>
                         <div class="mb-6">
@@ -227,129 +524,249 @@
                         </div>
                         <ul class="space-y-3 text-sm text-gray-700 border-t border-gray-200 pt-6">
                             <li class="flex items-center gap-2"><i class="fas fa-check text-rev-blue"></i> Up to 15 Custom Pages</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check text-rev-blue"></i> Blog Engine + Priority 24h SLA</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-rev-blue"></i> Dynamic Content / Blog Engine</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-rev-blue"></i> Extended Multi-Keyword Targeting</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-rev-blue"></i> Custom Integrations & Lead Webhooks</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-rev-blue"></i> 24-48h SLA Priority Support</li>
                         </ul>
                     </div>
-                    <button onclick="selectPlanAndScroll('Scale Plan ($499.99 setup + $89.99/mo)')" class="mt-8 block w-full bg-rev-dark hover:bg-rev-slate text-white text-center py-3.5 rounded-lg font-heading font-bold text-sm uppercase tracking-wider transition-colors cursor-pointer">
+                    <button onclick="selectPlanAndScroll('Scale Plan ($499.99 setup + $89.99/mo)')" class="mt-8 block w-full bg-rev-dark hover:bg-rev-slate text-white text-center py-3.5 rounded-lg font-heading font-bold text-sm uppercase tracking-wider transition-colors cursor-pointer shadow-md">
                         Select Scale Plan
                     </button>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section id="intake-section" class="py-24 bg-rev-light border-t border-gray-200">
+    <section id="intake-section" class="py-20 md:py-24 bg-rev-light border-t border-gray-200">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="hero-bg rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
-                <div class="relative z-10 bg-white rounded-2xl p-8 md:p-10">
+            <div class="hero-bg rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl relative overflow-hidden">
+                <div class="relative z-10 bg-white rounded-2xl p-6 sm:p-8 md:p-10">
+                    
                     <div class="text-center mb-8 space-y-2">
-                        <h2 class="font-heading font-black text-3xl text-rev-dark uppercase">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-wider mb-2">
+                            <i class="fas fa-shield-halved"></i> 100% Satisfaction & Speed Guarantee
+                        </div>
+                        <h2 class="font-heading font-black text-2xl sm:text-3xl text-rev-dark uppercase">
                             Start Your Website Build
                         </h2>
-                        <p class="text-gray-600 text-sm">
-                            Submit your project details. We'll review your scope and dispatch your project agreement within 4 hours.
+                        <p class="text-gray-600 text-sm max-w-lg mx-auto">
+                            Submit your business details below. Our engineers review your scope and dispatch your full project preview within 4 hours.
                         </p>
                     </div>
 
                     <form id="lead-intake-form" class="space-y-5">
                         <div class="grid md:grid-cols-2 gap-5">
                             <div>
-                                <label for="form-name" class="block text-xs font-bold text-rev-dark uppercase tracking-wider mb-2">Full Name</label>
-                                <input id="form-name" type="text" required class="w-full bg-rev-light border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-rev-blue font-medium text-rev-dark text-sm" placeholder="John Doe">
+                                <label for="form-name" class="block text-xs font-bold text-rev-dark uppercase tracking-wider mb-2">Full Name *</label>
+                                <input id="form-name" type="text" required class="w-full bg-rev-light border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-rev-blue font-medium text-rev-dark text-base sm:text-sm" placeholder="John Doe">
                             </div>
                             <div>
-                                <label for="form-company" class="block text-xs font-bold text-rev-dark uppercase tracking-wider mb-2">Company / Industry</label>
-                                <input id="form-company" type="text" required class="w-full bg-rev-light border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-rev-blue font-medium text-rev-dark text-sm" placeholder="e.g. Apex Auto Care / Roofing">
+                                <label for="form-company" class="block text-xs font-bold text-rev-dark uppercase tracking-wider mb-2">Company / Industry *</label>
+                                <input id="form-company" type="text" required class="w-full bg-rev-light border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-rev-blue font-medium text-rev-dark text-base sm:text-sm" placeholder="e.g. Apex Auto Rental / Florida Roofing">
                             </div>
                         </div>
 
                         <div class="grid md:grid-cols-2 gap-5">
                             <div>
-                                <label for="form-email" class="block text-xs font-bold text-rev-dark uppercase tracking-wider mb-2">Business Email</label>
-                                <input id="form-email" type="email" required class="w-full bg-rev-light border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-rev-blue font-medium text-rev-dark text-sm" placeholder="contact@company.com">
+                                <label for="form-email" class="block text-xs font-bold text-rev-dark uppercase tracking-wider mb-2">Business Email *</label>
+                                <input id="form-email" type="email" required class="w-full bg-rev-light border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-rev-blue font-medium text-rev-dark text-base sm:text-sm" placeholder="contact@yourcompany.com">
                             </div>
                             <div>
-                                <label for="form-plan" class="block text-xs font-bold text-rev-dark uppercase tracking-wider mb-2">Selected Package</label>
-                                <select id="form-plan" class="w-full bg-rev-light border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-rev-blue font-medium text-rev-dark text-sm">
+                                <label for="form-plan" class="block text-xs font-bold text-rev-dark uppercase tracking-wider mb-2">Selected Package *</label>
+                                <select id="form-plan" class="w-full bg-rev-light border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-rev-blue font-medium text-rev-dark text-base sm:text-sm">
                                     <option value="Launch Plan ($199.99 setup + $39.99/mo)">Launch Plan ($199.99 setup)</option>
-                                    <option value="Growth Plan ($349.99 setup + $69.99/mo)" selected>Growth Plan ($349.99 setup)</option>
+                                    <option value="Growth Plan ($349.99 setup + $69.99/mo)" selected>Growth Plan ($349.99 setup) — Most Popular</option>
                                     <option value="Scale Plan ($499.99 setup + $89.99/mo)">Scale Plan ($499.99 setup)</option>
-                                    <option value="Custom Enterprise Build">Custom Enterprise Scope</option>
+                                    <option value="Custom Enterprise Scope">Custom Enterprise Scope</option>
                                 </select>
                             </div>
                         </div>
 
                         <div>
                             <label for="form-message" class="block text-xs font-bold text-rev-dark uppercase tracking-wider mb-2">Project Brief / Current Website Link</label>
-                            <textarea id="form-message" rows="3" class="w-full bg-rev-light border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-rev-blue font-medium text-rev-dark text-sm" placeholder="Share your current website link, target timeline, or specific feature goals..."></textarea>
+                            <textarea id="form-message" rows="3" class="w-full bg-rev-light border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-rev-blue font-medium text-rev-dark text-base sm:text-sm" placeholder="Share your current website link, target goals, or feature requirements..."></textarea>
                         </div>
 
-                        <button id="submit-btn" type="submit" class="w-full bg-rev-dark hover:bg-rev-blue text-white font-heading font-black text-sm py-4 rounded-lg uppercase tracking-widest transition-all duration-300 shadow-md">
-                            Submit Project Application
+                        <button id="submit-btn" type="submit" class="w-full bg-rev-dark hover:bg-rev-blue text-white font-heading font-black text-sm py-4 rounded-lg uppercase tracking-widest transition-all duration-300 shadow-xl cursor-pointer">
+                            Submit Project Application →
                         </button>
-                        <div id="form-status" class="text-center font-bold text-sm hidden"></div>
+                        <div id="form-status" class="text-center font-bold text-sm hidden" role="status" aria-live="polite"></div>
                     </form>
+
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="faq" class="py-20 md:py-24 bg-white border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 space-y-3">
+                <span class="text-rev-blue font-heading font-bold text-xs uppercase tracking-widest">Everything You Need To Know</span>
+                <h2 class="font-heading font-black text-2xl sm:text-4xl text-rev-dark uppercase">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-gray-600 text-sm sm:text-base">Clear terms, transparent expectations, and zero hidden fees.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-rev-light p-6 rounded-xl border border-gray-200">
+                    <h3 class="font-heading font-bold text-base sm:text-lg text-rev-dark mb-2">What is included in each website package?</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Every package includes a custom-designed website, responsive mobile optimization, foundational SEO structure, high-speed cloud hosting, and continuous monthly maintenance. Page counts, dynamic blogs, and advanced funnel architectures scale with your chosen tier.
+                    </p>
+                </div>
+
+                <div class="bg-rev-light p-6 rounded-xl border border-gray-200">
+                    <h3 class="font-heading font-bold text-base sm:text-lg text-rev-dark mb-2">How fast will my site go live?</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Standard builds go live in 10 to 20 business days once you submit your intake form and onboarding details. You will receive progress previews along the way.
+                    </p>
+                </div>
+
+                <div class="bg-rev-light p-6 rounded-xl border border-gray-200">
+                    <h3 class="font-heading font-bold text-base sm:text-lg text-rev-dark mb-2">Why is there an ongoing monthly fee?</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        The monthly retainer covers ultra-fast cloud server hosting, SSL encryption, daily backups, 24/7 uptime monitoring, security patching, and regular content adjustments without unpredictable hourly invoices.
+                    </p>
+                </div>
+
+                <div class="bg-rev-light p-6 rounded-xl border border-gray-200">
+                    <h3 class="font-heading font-bold text-base sm:text-lg text-rev-dark mb-2">What updates are covered under monthly maintenance?</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Routine updates to text, pictures, hours, promotions, and new portfolio jobs are fully covered under your monthly subscription. Simply email our support desk and it gets updated.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-rev-dark text-white py-12 border-t border-rev-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <div class="flex items-center gap-3">
+                <div class="relative w-7 h-7 flex items-center justify-center">
+                    <svg viewBox="0 0 100 100" class="w-full h-full text-rev-cyan" aria-hidden="true">
+                        <circle cx="50" cy="55" r="30" fill="none" stroke="currentColor" stroke-width="8" stroke-dasharray="10 5"/>
+                    </svg>
+                    <div class="absolute inset-0 flex items-center justify-center -translate-y-0.5">
+                        <i class="fas fa-arrow-up text-white text-xs"></i>
+                    </div>
+                </div>
+                <span class="font-heading font-bold text-lg tracking-tight">
+                    REV<span class="text-rev-cyan">UP</span> MEDIA
+                </span>
+            </div>
+
+            <div class="text-rev-muted text-xs font-mono">
+                © 2026 RevUp Media. Built for performance and conversion.
+            </div>
+
+            <div class="flex gap-6 text-xs font-semibold text-rev-muted">
+                <a href="#solutions" class="hover:text-white transition-colors">Solutions</a>
+                <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
+                <a href="#intake-section" class="text-rev-cyan hover:underline">Start Build</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="fixed bottom-4 left-4 right-4 sm:left-6 sm:right-auto sm:max-w-sm bg-rev-dark/95 border border-rev-border text-white p-4 rounded-xl shadow-2xl z-[60] flex items-center gap-3 transition-all duration-500 transform translate-y-32 opacity-0">
+        <div class="w-10 h-10 bg-rev-blue/20 text-rev-cyan rounded-lg flex items-center justify-center font-bold text-lg shrink-0">
+            🔥
+        </div>
+        <div class="text-xs">
+            <p class="font-bold text-white" id="toast-title">Automotive Client Secured</p>
+            <p class="text-rev-muted" id="toast-desc">Growth Plan in Miami, FL · 14m ago</p>
+        </div>
+    </div>
+
     <script>
-        // INSERT YOUR GOOGLE APPS SCRIPT WEB APP URL HERE:
-        // REPLACE THIS STRING WITH YOUR ACTUAL GOOGLE APPS SCRIPT URL (ends in /exec)
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwZhSZ2WN5ml50Pht7hMcFj-YSGe5RXtGsCo-cGlzUHRWq-KJE54KCcTlSmpGuQBibEwg/exec";
+        // GOOGLE APPS SCRIPT WEBHOOK URL
+        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwZhSZ2WN5ml50Pht7hMcFj-YSGe5RXtGsCo-cGlzUHRWq-KJE54KCcTlSmpGuQBibEwg/exec";
 
-function selectPlanAndScroll(planName) {
-    const planDropdown = document.getElementById('form-plan');
-    if (planDropdown) {
-        planDropdown.value = planName;
-    }
-    const intakeSection = document.getElementById('intake-section');
-    if (intakeSection) {
-        intakeSection.scrollIntoView({ behavior: 'smooth' });
-    }
-}
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        menu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => menu.classList.add('hidden')));
 
-const leadForm = document.getElementById('lead-intake-form');
-const submitBtn = document.getElementById('submit-btn');
-const statusMsg = document.getElementById('form-status');
+        // Smooth Scroll & Auto Select Plan
+        function selectPlanAndScroll(planName) {
+            const planDropdown = document.getElementById('form-plan');
+            if (planDropdown) planDropdown.value = planName;
+            const intakeSection = document.getElementById('intake-section');
+            if (intakeSection) intakeSection.scrollIntoView({ behavior: 'smooth' });
+        }
 
-leadForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-    submitBtn.disabled = true;
-    submitBtn.innerText = "Submitting...";
+        // Intake Form Submission
+        const leadForm = document.getElementById('lead-intake-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const statusMsg = document.getElementById('form-status');
 
-    // Encode form parameters so Apps Script reads them reliably across origins
-    const formData = new URLSearchParams();
-    formData.append("name", document.getElementById('form-name').value);
-    formData.append("company", document.getElementById('form-company').value);
-    formData.append("email", document.getElementById('form-email').value);
-    formData.append("plan", document.getElementById('form-plan').value);
-    formData.append("message", document.getElementById('form-message').value);
+        leadForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Submitting Your Application...";
 
-    fetch(GOOGLE_SCRIPT_URL, {
-        method: "POST",
-        mode: "no-cors", // Required for cross-domain browser submissions to Google Script
-        headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
-        },
-        body: formData.toString()
-    })
-    .then(() => {
-        statusMsg.className = "text-center font-bold text-sm text-emerald-600 block mt-4";
-        statusMsg.innerText = "✓ Application received! We will reach out with your build timeline.";
-        leadForm.reset();
-    })
-    .catch((err) => {
-        statusMsg.className = "text-center font-bold text-sm text-red-600 block mt-4";
-        statusMsg.innerText = "Error sending message. Please try again or email revup.media1001@gmail.com directly.";
-        console.error("Submission error:", err);
-    })
-    .finally(() => {
-        submitBtn.disabled = false;
-        submitBtn.innerText = "Submit Project Application";
-    });
-});
+            const formData = new URLSearchParams();
+            formData.append("name", document.getElementById('form-name').value);
+            formData.append("company", document.getElementById('form-company').value);
+            formData.append("email", document.getElementById('form-email').value);
+            formData.append("plan", document.getElementById('form-plan').value);
+            formData.append("message", document.getElementById('form-message').value);
+
+            fetch(GOOGLE_SCRIPT_URL, {
+                method: "POST",
+                mode: "no-cors",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: formData.toString()
+            })
+            .then(() => {
+                statusMsg.className = "text-center font-bold text-sm text-emerald-600 block mt-4";
+                statusMsg.innerText = "✓ Application received! We will reach out with your build timeline shortly.";
+                leadForm.reset();
+            })
+            .catch((err) => {
+                statusMsg.className = "text-center font-bold text-sm text-red-600 block mt-4";
+                statusMsg.innerText = "Error sending message. Please email revup.media1001@gmail.com directly.";
+                console.error("Submission error:", err);
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerText = "Submit Project Application →";
+            });
+        });
+
+        // Live Social Proof Toast Rotator
+        const proofEvents = [
+            { title: "Florida Contractor Secured", desc: "Growth Plan ($349.99) · 8m ago" },
+            { title: "Luxury Auto Spa Onboarded", desc: "Launch Plan ($199.99) · 24m ago" },
+            { title: "Commercial Roofer Selected", desc: "Scale Plan ($499.99) · 41m ago" }
+        ];
+
+        let proofIndex = 0;
+        const toast = document.getElementById('toast');
+        const toastTitle = document.getElementById('toast-title');
+        const toastDesc = document.getElementById('toast-desc');
+
+        function showProof() {
+            if (!toast) return;
+            toastTitle.innerText = proofEvents[proofIndex].title;
+            toastDesc.innerText = proofEvents[proofIndex].desc;
+            toast.classList.remove('translate-y-32', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-32', 'opacity-0');
+                proofIndex = (proofIndex + 1) % proofEvents.length;
+            }, 4500);
+        }
+
+        setTimeout(() => {
+            showProof();
+            setInterval(showProof, 14000);
+        }, 3000);
     </script>
 </body>
 </html>
