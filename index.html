@@ -296,55 +296,60 @@
 
     <script>
         // INSERT YOUR GOOGLE APPS SCRIPT WEB APP URL HERE:
-        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwZhSZ2WN5ml50Pht7hMcFj-YSGe5RXtGsCo-cGlzUHRWq-KJE54KCcTlSmpGuQBibEwg/execL";
+        // REPLACE THIS STRING WITH YOUR ACTUAL GOOGLE APPS SCRIPT URL (ends in /exec)
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwZhSZ2WN5ml50Pht7hMcFj-YSGe5RXtGsCo-cGlzUHRWq-KJE54KCcTlSmpGuQBibEwg/exec";
 
-        function selectPlanAndScroll(planName) {
-            const planDropdown = document.getElementById('form-plan');
-            if (planDropdown) {
-                planDropdown.value = planName;
-            }
-            const intakeSection = document.getElementById('intake-section');
-            if (intakeSection) {
-                intakeSection.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
+function selectPlanAndScroll(planName) {
+    const planDropdown = document.getElementById('form-plan');
+    if (planDropdown) {
+        planDropdown.value = planName;
+    }
+    const intakeSection = document.getElementById('intake-section');
+    if (intakeSection) {
+        intakeSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}
 
-        const leadForm = document.getElementById('lead-intake-form');
-        const submitBtn = document.getElementById('submit-btn');
-        const statusMsg = document.getElementById('form-status');
+const leadForm = document.getElementById('lead-intake-form');
+const submitBtn = document.getElementById('submit-btn');
+const statusMsg = document.getElementById('form-status');
 
-        leadForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            submitBtn.disabled = true;
-            submitBtn.innerText = "Submitting...";
+leadForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    submitBtn.innerText = "Submitting...";
 
-            const payload = {
-                name: document.getElementById('form-name').value,
-                company: document.getElementById('form-company').value,
-                email: document.getElementById('form-email').value,
-                plan: document.getElementById('form-plan').value,
-                message: document.getElementById('form-message').value
-            };
+    // Encode form parameters so Apps Script reads them reliably across origins
+    const formData = new URLSearchParams();
+    formData.append("name", document.getElementById('form-name').value);
+    formData.append("company", document.getElementById('form-company').value);
+    formData.append("email", document.getElementById('form-email').value);
+    formData.append("plan", document.getElementById('form-plan').value);
+    formData.append("message", document.getElementById('form-message').value);
 
-            try {
-                const response = await fetch(GOOGLE_SCRIPT_URL, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                });
-
-                statusMsg.className = "text-center font-bold text-sm text-emerald-600 block mt-4";
-                statusMsg.innerText = "✓ Application received! We will reach out with your build timeline.";
-                leadForm.reset();
-            } catch (err) {
-                statusMsg.className = "text-center font-bold text-sm text-red-600 block mt-4";
-                statusMsg.innerText = "Error sending message. Please try again or email revup.media1001@gmail.com directly.";
-            } finally {
-                submitBtn.disabled = false;
-                submitBtn.innerText = "Submit Project Application";
-            }
-        });
+    fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors", // Required for cross-domain browser submissions to Google Script
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: formData.toString()
+    })
+    .then(() => {
+        statusMsg.className = "text-center font-bold text-sm text-emerald-600 block mt-4";
+        statusMsg.innerText = "✓ Application received! We will reach out with your build timeline.";
+        leadForm.reset();
+    })
+    .catch((err) => {
+        statusMsg.className = "text-center font-bold text-sm text-red-600 block mt-4";
+        statusMsg.innerText = "Error sending message. Please try again or email revup.media1001@gmail.com directly.";
+        console.error("Submission error:", err);
+    })
+    .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerText = "Submit Project Application";
+    });
+});
     </script>
 </body>
 </html>
